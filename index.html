@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Iron man Landing page</title>
+</head>
+<body>
+    <section class="sec">
+    <header>
+      <a href="index.html"><img src="/Img/Iron-Man-Logo.png" class="logo"></a>
+      <div class="toggleMenu" onclick="menuToggle();"></div>
+      <ul class="navigation">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="ironmanMagic.html">Iron man magic</a></li>
+        <li><a href="movie.html">Movie</a></li>
+      </ul>
+    </header>
+    <div class="content">
+      <div class="textBox">
+        <h2>I am<br><span>Iron man</h2>
+          <p>A billionaire industrialist and genius inventor, Tony Stark (Robert Downey Jr.), 
+             is conducting weapons tests overseas, but terrorists kidnap him to force him to build a
+             devastating weapon. Instead, he builds an armored suit and upends his captors. 
+             Returning to America, Stark refines the suit and uses it to combat, crime and terrorism.</p>
+            <a class="hey" href="https://en.wikipedia.org/wiki/Iron_Man" target="_blank">Read more...</a>
+            <img src="/Img/cloud1.png">
+      </div>
+    </div>
+    <ul class="thumb">
+      <li class="log"><img src="/Img/Iron man.png" class="layer"></li>
+    </ul>
+    <ul class="sci">
+      <li><a href="https://www.facebook.com/john.kouatsis/" target="_blank"><img src="/Img/facebook.png"></a></li>
+      <li><a href="https://twitter.com/giannis38782836" target="_blank"><img src="/Img/instagram.png"></a></li>
+      <li><a href="https://www.instagram.com/johnkoulatsis/" target="_blank"><img src="/Img/twitter.png"></a></li>
+    </ul>
+  </section>
+  <script type="text/javascript">
+    document.addEventListener("mousemove", parallax);
+    function parallax(e) {
+      this.querySelectorAll('.layer').forEach(layer => {
+        const speed = layer.getAttribute('data-speed')
+
+        const x = (window.innerWidth - e.pgeX*speed)/100
+        const y = (window.innerWidth - e.pgeY*speed)/100
+
+        layer.style.transform = `translateX(${x}px) translateY(${y}px)`
+      })
+    }
+  </script>
+</body>
+</html>

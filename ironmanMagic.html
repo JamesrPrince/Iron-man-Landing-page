@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="ironmanMagic.css">
+  <title>Iron man magic page</title>
+</head>
+<body>
+  <section>
+    <img src="/Img/bg.jpg" id="bg">
+    <img src="/Img/moon.png" id="moon">
+    <img src="/Img/cloud1.png" id="cloud1">
+    <img src="/Img/cloud2.png" id="cloud2">
+    <img src="/Img/jet.png" id="jet">
+    <img src="/Img/ironman.png" id="ironman">
+  </section>
+  <div class="sec">
+    <div class="content">
+      <h2>My Name is Tony Stark and I'm not Afraid of you.</h2>
+      <p>Iron Man's Origin Story:
+        Young Tony Stark was a prodigy of mechanical engineering genius. At 21, he took over his father's company and launched it 
+        into a hugely successful corporation. During a testing of new technology in Vietnam, 
+        Tony was hit by a piece of shrapnel from a booby trap. The shrapnel was lodged near his heart and without help, Tony would die.
+        There, he was captured by a communist leader and imprisoned, forced to make new weapons for the overlord. 
+        Also imprisoned with him was Professor Ho Yinsen, a renowned physicist. Together they built the first suit of armor that 
+        would become Iron Man. Professor Ho even made the chest plate of the armor with a device to help Tony’s heart keep beating.
+        Tony used the armor to escape, although in the process, Professor Ho sacrificed his life to give Tony the time to charge it to
+        full capacity. Tony escaped with James Rhodes (now War Machine) and returned to America to become a part of the Avengers, taking
+        his fathers teachings of giving back to the world to heart and using his new armor to aid mankind. He wasn’t without his own
+        demons though, as he struggled with alcoholism throughout his life. In the midst of being a hero and working with the Avengers,
+        Tony also continued to grow his company into a multi-billion corporation. He developed and sold technology that went to 
+        S.H.I.E.L.D. and other organizations, such as the Avengers Quinjet. His success continued to grow, and this to let him
+        being targeted by Obadiah Stane, another billionaire with his own weapons design business. Obadiah sought to ruin Tony, 
+        eventually taking over his company. This set things in motion and Tony ended up becoming homeless forced him to return
+        to the bottle and he even gave up being Iron Man, turning it over to his friend Jim Rhodes. Stane even discovered
+        designs of the Iron Man armor and began to create his own version, called the Iron Monger. Stane planned on selling multiple
+        suits to the highest bidder. Eventually, Tony got his life together and began a new company and resumed being Iron Man again.
+        He even started a new company called Circuits Maximus. This enraged Stane and led to a battle between Iron Man and Iron Monger.
+        When Stane lost, he committed suicide and this led Tony getting back his company and life. Later, when more and more villains
+        began to surface with armor based on the Iron Man armor, Stark took it upon himself to stop the use of the technology based 
+        on his designs and started what is now know as the “Armor Wars.” He went after the supervillains and even the government agencies
+        that were using similarly powered armor and deactivated them, taking back what he thought was rightfully his.
+        With such global threats on the horizon, Tony helped start the Illuminati, a group of other superpowered beings that worked to
+        control the fate of the world. The group is comprised of Iron Man, Black Bolt, Sub Mariner, Professor X, Reed Richards, 
+        and Dr. Strange. They were responsible for recovering the infinity gems, items when combined with the Infinity Gauntlet, 
+        would grant the bearer godlike powers. They were also responsible for sending the Hulk into orbit, which in turn started World
+        War Hulk. Tony Stark was also a major player in the Civil War, where the government wanted heroes to register themselves,
+        making their identities known and essentially becoming S.H.I.E.L.D. agents. Many heroes balked at this, not wanting to give up
+        their identities or become pawns of the government and so went underground. The heroes eventually split into two groups. 
+        There were those for the registration, led by Tony Stark himself, where he was made the director of S.H.I.E.L.D., and those
+        against, led by Captain America. The war split the Marvel universe down the middle and climaxed in a giant battle in New York City,
+        but when Captain America saw the carnage this was causing the American people, he called a cease-fire and turned himself in. 
+        He was later assassinated going to the courthouse for trial, a thing that Tony himself feels responsible for.
+        Lately, Tony Stark is concerned with the fact that there have been Skrulls that have infiltrated agencies and super-powered 
+        groups. The main problem is that these Skrulls are undetectable to anyone, and therefore everyone is suspect. He is working
+        against the Skrulls, bringing in the brightest that the world has to offer to find a way to stop this secret invasion.</p>
+    </div>
+  </div>
+  <a href="index.html" class="home">Back to Homepage</a>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/ScrollTrigger.min.js"></script>
+  <script>
+    gsap.to("#bg", {
+      scrollTrigger : {
+        scrub: true
+      },
+      y: 200,
+      scale: 1.5
+    })
+
+    gsap.to("#moon", {
+      scrollTrigger : {
+        scrub: true
+      },
+      x: -400,
+      scale: 2
+    })
+
+    gsap.to("#cloud1", {
+      scrollTrigger : {
+        scrub: true
+      },
+      x: -400,
+    })
+
+    gsap.to("#cloud2", {
+      scrollTrigger : {
+        scrub: true
+      },
+      x: 300,
+    })
+
+    gsap.to("#jet", {
+      scrollTrigger : {
+        scrub: true
+      },
+      x: 1000,
+      y: 200,
+      scale: 4
+    })
+
+    gsap.to("#ironman", {
+      scrollTrigger : {
+        scrub: true
+      },
+      x: 0,
+      y: -1800,
+      scale: 1,
+      rotate: -50
+    })
+  </script>
+</body>
+</html>
